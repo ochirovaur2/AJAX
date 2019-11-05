@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Asynchronous JavaScript</title>
+</head>
+<body>
+    <h1>Asynchronous JavaScript</h1>
+    <script>
+    	
+
+
+        fetch(
+        	'https://www.metaweather.com/api/location/2487956/2013/4/30/'
+        	)
+        .then(res => {
+        	console.log(res);
+        })
+        .catch(error => {
+        	console.log(error);
+        });
+    </script>
+</body>
+</html>
